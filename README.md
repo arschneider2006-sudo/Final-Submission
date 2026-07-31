@@ -1,118 +1,87 @@
-# Final-Submission
-DIG2500 Checkpoint 4
 ```markdown
-# 👽 Cosmic Collector
+# Project Title
 
-## Project Overview
+Cosmic Collector
 
-**Cosmic Collector** is a space-themed memory matching game built with **HTML, CSS, and JavaScript**. Players help an alien complete its mission by matching pairs of hidden space-themed cards while avoiding Human cards hidden in the deck. Every Human card revealed counts as a sighting, and after two sightings the mission fails.
+## Project Option
 
-The project demonstrates responsive web design, JavaScript event handling, DOM manipulation, CSS animations, and interactive game logic.
+Simple Browser Game
 
----
+## Project Description
 
-## Features
+Cosmic Collector is a space-themed memory matching game built using HTML, CSS, and JavaScript. Players help an alien complete its mission by matching pairs of hidden space-themed cards while avoiding Human cards hidden throughout the deck. Each Human card revealed counts as a sighting, and revealing both Human cards causes the mission to fail. The objective is to successfully match all eight pairs before receiving two Human sightings.
+
+## Theme Interpretation
+
+The game was designed around the theme of **Space** by creating an alien abduction mission. The visuals, game mechanics, and storyline all support the theme through space-themed symbols, glowing sci-fi colors, and the objective of secretly collecting cows while avoiding humans. The interface is intended to resemble a futuristic mission control display.
+
+## Intended User or Player
+
+The game is designed for casual players of all ages who enjoy simple memory games with a fun science-fiction theme. It is intended for users looking for a quick and interactive browser game.
+
+## User or Player Goal
+
+The player's goal is to find all eight matching pairs of cards while avoiding the two hidden Human cards. If both Human cards are revealed, the mission fails and the player must restart.
+
+## Main Features
 
 - Space-themed memory matching game
-- 8 matching pairs of cards
-- 2 hidden Human cards that act as obstacles
 - Randomized card placement every game
+- 8 matching pairs
+- 2 Human obstacle cards
 - Match counter
 - Move counter
 - Human sighting tracker
 - Win and lose conditions
 - Restart Mission button
-- Responsive layout for desktop, tablet, and mobile devices
+- Responsive layout for desktop and mobile devices
 - Animated card flip effects
 
----
+## JavaScript Features
 
-## How to Play
+JavaScript controls the game's core functionality by:
 
-1. Click two cards to flip them over.
-2. Matching cards stay face-up.
-3. Non-matching cards flip back over.
-4. Human cards do **not** have a matching pair.
-5. Each Human card revealed counts as one sighting.
-6. After two sightings, the mission fails.
-7. Match all eight pairs before receiving two sightings to complete the mission.
-
----
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (ES6)
-
----
-
-## File Structure
-
-```
-
-CosmicCollector/
-│
-├── index.html      # Main webpage
-├── CC.css          # Styling and responsive layout
-├── CC.js           # Game logic
-└── README.md       # Project documentation
-
-```
-
----
-
-## Game Logic
-
-The game creates an array containing:
-
-- 8 matching pairs (16 cards)
-- 2 Human cards
-
-The array is shuffled before the game board is generated. JavaScript keeps track of:
-
-- Player moves
-- Successful matches
-- Human sightings
-- Win and loss conditions
-
-Cards are dynamically created using JavaScript and displayed with CSS flip animations.
-
----
+- Randomly shuffling the deck each game.
+- Dynamically generating every card on the game board.
+- Handling card flip interactions.
+- Checking whether selected cards match.
+- Updating the move counter.
+- Tracking successful matches.
+- Counting Human sightings.
+- Displaying win and loss messages.
+- Restarting the game when the Restart Mission button is pressed.
 
 ## Responsive Design
 
-The game adjusts to different screen sizes using CSS media queries by:
+The project uses CSS media queries to adapt to different screen sizes. On smaller devices, the game board automatically changes the number of columns, reduces card sizes, and adjusts spacing to keep the interface easy to use. Text and score panels also resize appropriately for tablets and mobile phones.
 
-- Reducing card size on smaller screens
-- Changing the number of grid columns
-- Adjusting spacing between cards
-- Maintaining readable text and controls
+## User Testing
 
----
+No peer feedback was received during testing, so revisions were based on self-testing. Multiple playthroughs were completed to verify that card matching, Human sightings, score tracking, win conditions, and the restart button all worked correctly. Testing also helped identify areas where the instructions could be simplified, mobile spacing could be improved, and visual feedback for Human sightings and game completion could be made more noticeable.
 
-## Future Improvements
+## Revisions
 
-Potential future features include:
+- Improved the mobile layout by adjusting the game board spacing and card sizing for smaller screens.
+- Enhanced the visual design with glowing effects, animated card flips, and a consistent space-themed color palette.
+- Added a Human sighting mechanic that creates an additional challenge beyond a traditional memory game.
+- Improved the scoreboard by separating matches, moves, and Human sightings into individual information panels.
+- Added clear win and mission failure messages to better communicate game progress.
 
-- Sound effects and background music
-- Difficulty settings
-- Timer mode
-- High score tracking
-- Additional space-themed card sets
-- Animated victory and defeat screens
+## Technologies Used
 
----
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
 
 ## Credits
 
-Created as a course project demonstrating responsive web design and JavaScript interactivity.
+- Google Fonts – Orbitron
+- Unicode Emoji Consortium icons used for card symbols
+- Developed using Visual Studio Code
+- Version control and hosting through GitHub and GitHub Pages
 
-### Font
+## Future Improvements
 
-- Orbitron (Google Fonts)
-
-### Graphics
-
-- Unicode emoji icons supported by modern web browsers.
+With more development time, I would like to add sound effects, background music, multiple difficulty levels, a timer mode, high-score tracking, and animated victory and defeat screens. I would also like to include additional card themes and accessibility improvements such as keyboard navigation and improved color contrast for users with visual impairments.
 ```
